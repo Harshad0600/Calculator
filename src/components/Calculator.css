@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./src/assets/new-cal.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.calculator-card {
+    width: 330px;
+    padding: 11px;
+    background: #f4f7f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.display {
+    width: 290px;
+    height: 60px;
+    background: #c0e7f3;
+    color: #333;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 auto 10px;
+    border: none;
+    overflow: hidden;
+}
+.button {
+    width: 200px;
+    height: 60px;
+    margin: 6px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #e0e0e0;
+    color: #333;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.2s ease;
+}
+.button:hover {
+    background: #d0d0d0;
+}
+.operator {
+    background: #f9d362;
+    color: white;
+}
+.operator:hover {
+    background: #f8c552;
+}
+.equal-button {
+    background: #e74c3c;
+    color: white;
+}
+.equal-button:hover {
+    background: #c0392b;
+}
+.clear-button {
+    background: #f27d7d;
+    color: white;
+}
+.clear-button:hover {
+    background: #e06868;
+}
+.divide {
+    background: #3498db;
+}
+.divide:hover {
+    background: #2980b9;
+}
+
+.percentile {
+    background: #2ecc71;
+}
+.percentile:hover {
+    background: #27ae60;
+}
+button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+button-container .button {
+    flex: 1 0 22%;
+}
+button-container .equal-button {
+    flex: 1 0 46%;
+}
